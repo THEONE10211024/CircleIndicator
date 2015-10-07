@@ -8,17 +8,6 @@ a lightweight viewpager indicator!
 
 ![solo mode]( https://github.com/THEONE10211024/CircleIndicator/blob/master/demo/solo.gif)    
 
-Gradle
-------------
-
-**version 1.1.5 (```minSdkVersion="11"```)**
-```groovy
-dependencies {
-    compile 'me.relex:circleindicator:1.1.5@aar'
-}
-```
-
-
 Usage
 --------
 xml:
