@@ -34,13 +34,12 @@ Notice:the method should be called after ViewPager.setAdapter().
 
 #####Properties:
 
-* `app: ci_radius`
-* `app: ci_margin`
-* `app: ci_background`
-* `app: ci_selected_background`
-* `app:ci_drawable_unselected`
-* `app: ci_gravity`
-* `app: ci_mode`
+* `app: ci_radius` :indicator's radius
+* `app: ci_margin` :margin between two indicators
+* `app: ci_background`:indicator's background
+* `app: ci_selected_background`:selected indicator's background
+* `app: ci_gravity`:indicator's layout gravity,support left,center and right.
+* `app: ci_mode`:indicator's change mode when viewpager scrolled
 
 
 License
