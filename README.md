@@ -60,3 +60,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-CircleIndicator-green.svg?style=flat)](https://android-arsenal.com/details/1/2606)
