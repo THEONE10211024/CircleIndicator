@@ -228,21 +228,21 @@ public class CircleIndicator extends View{
                         Canvas.FULL_COLOR_LAYER_SAVE_FLAG |
                         Canvas.CLIP_TO_LAYER_SAVE_FLAG);
         for(ShapeHolder item : tabItems){
-            canvas.save();
-            canvas.translate(item.getX(),item.getY());
-            item.getShape().draw(canvas);
-            canvas.restore();
+            drawItem(canvas,item);
         }
 
         if(movingItem != null){
-            canvas.save();
-            canvas.translate(movingItem.getX(), movingItem.getY());
-            movingItem.getShape().draw(canvas);
-            canvas.restore();
+           	drawItem(canvas,movingItem);
         }
         canvas.restoreToCount(sc);
     }
-
+	private void drawItem(Canvas canvas,ShapeHolder shapeHolder )
+	{
+		canvas.save();
+        canvas.translate(shapeHolder.getX(),shapeHolder.getY());
+        shapeHolder.getShape().draw(canvas);
+        canvas.restore();
+	}
     public void setIndicatorRadius(float mIndicatorRadius) {
         this.mIndicatorRadius = mIndicatorRadius;
     }
