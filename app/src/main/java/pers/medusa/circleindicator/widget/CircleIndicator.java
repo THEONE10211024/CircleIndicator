@@ -205,6 +205,10 @@ public class CircleIndicator extends View{
         if(movingItem == null){
             throw new IllegalStateException("forget to create movingItem?");
         }
+        
+        if(tabItems.size() == 0) {
+            return;
+        }
         ShapeHolder item = tabItems.get(position);
         movingItem.resizeShape(item.getWidth(), item.getHeight());
         float x = item.getX()+(mIndicatorMargin + mIndicatorRadius*2)*positionOffset;
