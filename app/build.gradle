@@ -5,7 +5,6 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "pers.medusa.circleindicator"
         minSdkVersion 11
         targetSdkVersion 23
         versionCode 1
